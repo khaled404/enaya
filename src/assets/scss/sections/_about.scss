@@ -1,0 +1,151 @@
+/*==========================
+08. About Style CSS
+==========================*/
+.about-area-wrapper {
+
+  padding: 80px 0;
+
+  .about-img {
+
+    @media(max-width: 500px) {
+
+      width: 75%;
+    }
+  }
+  
+}
+.about-content {
+  // @media #{$xl-device} {
+  //   margin-left: 55px;
+  //   // padding-right: 80px;
+
+  //   h2 {
+  //     font-weight: 400;
+  //   }
+
+  //   .about-list {
+
+  //     margin-left: 20px;
+
+  //     li {
+  //       line-height: 2.3em;
+  //       color: #636363;
+  //       font-size: 15px;
+
+  //       &::before {
+  //         content: "\2022";
+  //         color: #6684F2;
+  //         font-weight: bold;
+  //         width: 1em;
+  //         margin-left: -1em;
+  //       }
+  //       span.about-text {
+  //         margin-left: 10px;
+  //         display: inline-block; 
+  //       }
+  //     }
+  //   }
+  // }
+
+  @media(max-width : 500px){
+
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &--2{
+    @media #{$xl-device} {
+      margin-left: 0;
+      padding-right: 40px;
+    }
+  }
+}
+
+.about-thumb {
+  overflow: hidden;
+
+  @media #{$sm-device} {
+    margin-bottom: 35px;
+  }
+
+  img {
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  &--2{
+    margin-right: -250px;
+  }
+}
+
+
+// Home 2 About Style
+.home-two-about-area{
+  background-color: $offWhite;
+  //background-image: url('../img/about-2-bg.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  @media #{$lg-device, $xlmax-device} {
+    background-size: 1100px auto;
+  }
+
+  @media #{$sm-device, $md-device} {
+    background-image: none !important;
+  }
+
+  .about-content{
+    padding-top: 100px;
+    padding-bottom: 110px;
+
+    @media #{$md-device} {
+      padding-top: 40px;
+      padding-bottom: 90px;
+    }
+
+    @media #{$sm-device} {
+      padding-bottom: 60px;
+      padding-top: 0;
+    }
+  }
+}
+
+.video-button-thumb{
+  position: relative;
+
+  &:after{
+    content: '';
+    background-color: $brandColor;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .btn-play{
+    border-radius: 50%;
+    background-color: $white;
+    color: $brandColor;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+
+    &:hover{
+      background-color: $brandColor;
+      color: $white;
+    }
+
+    i{
+      padding-left: 5px;
+    }
+  }
+}

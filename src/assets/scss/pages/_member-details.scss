@@ -1,0 +1,117 @@
+/*==========================================
+23. Team Member Details Page Style CSS
+===========================================*/
+
+.member-desc {
+  h2 {
+    @include font-size(32px);
+    margin-bottom: 8px;
+  }
+
+  h5 {
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+}
+
+.member-social-icons {
+  display: flex;
+
+  a {
+    color: $white;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 50px;
+
+    &.facebook {
+      background-color: $facebook;
+    }
+
+    &.twitter {
+      background-color: $twitter;
+    }
+
+    &.linkedin {
+      background-color: $linkedin;
+    }
+
+    &.reddit {
+      background-color: $reddit;
+    }
+
+    &.pinterest {
+      background-color: $pinterest;
+    }
+  }
+}
+
+.contact-info {
+
+  @media(max-width : 500px) {
+
+    margin-top: 20px;
+  }
+  p {
+    position: relative;
+    padding-left: 85px;
+
+    strong {
+      position: absolute;
+      width: 75px;
+      left: 0;
+      top: 0;
+
+      &:after {
+        content: ':';
+        right: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
+
+.mem-achieve-item {
+  margin-top: 50px;
+
+  h4 {
+    font-weight: 600;
+  }
+
+  .skill-bar-wrap, .history-content-wrap {
+    @media #{$xl-device} {
+      max-width: 75%;
+    }
+  }
+
+  .history-content-wrap {
+    .icon-box-item {
+
+      @media #{$md-device} {
+        display: flex;
+      }
+
+      .icon-box__icon {
+        margin-right: 20px;
+        margin-bottom: 0;
+        flex-basis: 100px;
+        width: 100px;
+      }
+    }
+  }
+
+  &.member-education {
+    margin-bottom: 55px;
+
+    @media #{$sm-device} {
+      margin-bottom: 40px;
+    }
+  }
+}
+

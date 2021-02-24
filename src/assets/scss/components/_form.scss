@@ -1,0 +1,396 @@
+/*=====================
+06. Form Style CSS
+====================== */
+
+.form-input-item {
+  margin-top: 20px;
+  input {
+    background-color: $offWhite;
+    border: none;
+    display: block;
+    font-size: 16px;
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .btn-submit {
+    background-color: $brandColor;
+    border: 2px solid $brandColor;
+    color: $white;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 20px;
+    width: 100%;
+
+    &:hover {
+      color: $brandColor;
+      background-color: transparent;
+    }
+  }
+
+  &--outline {
+    input {
+      background-color: transparent;
+      border: 2px solid $brandColor;
+    }
+
+    .btn-submit {
+      background-color: transparent;
+    }
+  }
+}
+
+/* Start Search Form */
+
+#form-search {
+  position: relative;
+
+  @media (max-width: 500px) {
+    margin: 30px 0;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 45px;
+    border: none;
+    border-radius: 30px;
+
+    &::placeholder {
+      font-size: 12px;
+      color: #7d7d7d;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: $secondColor;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $secondFont;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 15px;
+  }
+}
+span.search-text {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #050607;
+
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.sign-up-page {
+  img {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .cus-rs {
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+}
+
+.login-page,
+.sign-up-page {
+  padding: 80px 0;
+}
+.sign-up-link,
+.login-link {
+  color: $maincolor;
+  font-size: 14px;
+
+  a {
+    color: $secondColor;
+    font-weight: 600;
+  }
+}
+
+#login-form,
+#forget-form,
+#update-form {
+  width: 500px;
+  margin: 0 auto;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+#login-form,
+#sign-up-form,
+#forget-form,
+#update-form {
+  margin-top: 20px;
+
+  input {
+    // border: 1px solid $secondColor;
+    // border-radius: 30px;
+    // padding: 15px;
+  }
+
+  // .remember {
+
+  //   .single-input-item {
+
+  //     input {
+  //       width: auto;
+  //       margin-right: 10px;
+  //       outline-color: $secondColor;
+  //       position: relative;
+  //       top: 5px;
+
+  //       &[type='radio'] {
+  //         &:after {
+  //           width: 18px;
+  //           height: 18px;
+  //           border-radius: 15px;
+  //           top: -3px;
+  //           left: -2px;
+  //           position: relative;
+  //           background-color: #ffffff;
+  //           content: '';
+  //           display: inline-block;
+  //           visibility: visible;
+  //           border: 1px solid $secondColor;
+  //         }
+
+  //         &:checked {
+
+  //           &:after {
+  //             width: 18px;
+  //             height: 18px;
+  //             border-radius: 15px;
+  //             top: -3px;
+  //             left: -2px;
+  //             position: relative;
+  //             background: $secondColor;
+  //             background: radial-gradient(circle, $secondColor 47%, rgba(255,255,255,1) 56%);
+  //             content: '';
+  //             display: inline-block;
+  //             visibility: visible;
+  //             border: 1px solid $secondColor;
+  //           }
+  //         }
+
+  //       }
+  //     }
+
+  //   }
+  // }
+
+  .forget-link a {
+    color: $maincolor;
+    font-size: 14px;
+  }
+}
+
+input[type="submit"] {
+  color: $white !important;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: $secondColor !important;
+  margin-top: 15px;
+}
+
+.form-header {
+  padding: 20px 0;
+
+  h3 {
+    color: $maincolor;
+    font-size: 48px;
+
+    @media (max-width: 500px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: $paragraph;
+    font-size: 16px;
+  }
+}
+
+select {
+  border: 1px solid #32a1a4;
+  border-radius: 30px;
+  padding: 15px;
+  width: 100% !important;
+  outline: none;
+  color: #959595;
+  font-size: 14px;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+.forget-pass-page {
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+}
+
+.cus-select {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: $secondColor;
+  }
+}
+/* End Search Form */
+
+/*=====================
+01. Contact Form Style 
+====================== */
+
+#contactForm {
+  .single-input-item {
+    input,
+    textarea {
+      width: 100%;
+      margin-right: 10px;
+      outline-color: $secondColor;
+      margin: 10px 0;
+
+      &::placeholder {
+        color: $paragraph;
+        font-size: 13px;
+      }
+
+      &:focus {
+        border-color: $secondColor;
+        &::placeholder {
+          color: $maincolor;
+        }
+      }
+    }
+
+    .con-submit {
+      width: 200px;
+      border-radius: 40px;
+      margin-top: 20px;
+    }
+  }
+}
+
+/*=====================
+01. Book Form Style 
+====================== */
+
+.single-input {
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 30px;
+    border: 1px solid $secondColor;
+
+    &::placeholder {
+      color: $paragraph;
+      font-size: 13px;
+    }
+
+    &[type="checkbox"] {
+      visibility: hidden;
+
+      &:checked {
+        .checklabel {
+          background-color: $secondColor;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .checklabel {
+    border: 1px solid $secondColor;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: $maincolor;
+  }
+
+  input[type="checkbox"]:checked {
+    &::placeholder {
+      color: #f00;
+    }
+  }
+
+  .payment {
+    .payment-method {
+      padding: 10px;
+
+      h5 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      .cus {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 15px;
+
+        input {
+          margin-bottom: 0px;
+          width: auto;
+          margin-right: 15px;
+        }
+
+        label {
+          margin-bottom: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/*=====================
+  Form Style CSS
+====================== */
+
+.auth-form {
+  .single-input-item {
+    input {
+      border: 1px solid $secondColor;
+      border-radius: 30px;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+  }
+}
+.character {
+  background-color: #95959550;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,18 @@
+/*============================
+5. Brand Logo Style CSS
+=============================*/
+.brand-logo-item{
+  img{
+    margin: auto;
+  }
+}
+
+.brand-logo-content{
+  .slick-list{
+    margin: 0 -10px;
+
+    .slick-slide{
+      padding: 0 10px;
+    }
+  }
+}

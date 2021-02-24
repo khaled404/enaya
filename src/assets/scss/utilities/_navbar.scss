@@ -1,0 +1,117 @@
+/*===========================
+4.1 - Main Navigation CSS
+=============================*/
+
+.main-menu {
+  align-content: center;
+  justify-content: flex-end;
+
+  & > li {
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & > a {
+      color: $brandColor;
+      display: block;
+      line-height: 1;
+      text-transform: uppercase;
+      position: relative;
+      font-size: 13px;
+      padding: 40px 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background-color:$secondColor;
+        transition: all .25s ease-in-out;
+      }
+
+      &:hover {
+
+        &:before {
+          width: 100%;
+        }
+      }
+
+      @media #{$lg-device} {
+        font-size: 14px;
+      }
+
+      .flag{
+        width: 25px;
+        position: relative;
+        top: -1px;
+        
+      }
+    }
+    
+  }
+}
+
+/* Responsive Mobile Menu */
+.res-mobile-menu {
+  // background-color: $brandColor;
+  display: block !important;
+  padding: 20px 30px;
+  color: $brandColor;
+
+  .mobile-nav{
+    li {
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      position: relative;
+      list-style: none;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        color: $white;
+        font-size: 16px;
+        padding: 15px 0;
+        margin: 0;
+        text-transform: capitalize;
+        position: relative;
+        display: block;
+
+        &:hover {
+          color: $white;
+          background-color: transparent;
+        }
+      }
+
+      img {
+        // display: none;
+      }
+
+      ul {
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        margin: 0;
+        padding-left: 10px;
+
+        li {
+
+          &.mega-menu-item{
+            & > a{
+              font-weight: 600;
+            }
+          }
+
+          a {
+            font-size: 13px;
+            color: rgba($white, 0.7);
+          }
+        }
+      }
+    }
+  }
+}

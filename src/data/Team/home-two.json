@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Lucy Farnando",
+    "designation": "CEO & Founder",
+    "profilePic": "team/h-2-01.png"
+  },
+  {
+    "id": 2,
+    "name": "James Anderson",
+    "designation": "HR & Admin",
+    "profilePic": "team/h-2-02.png"
+  },
+  {
+    "id": 3,
+    "name": "Thomas Nancy",
+    "designation": "Software Engineer",
+    "profilePic": "team/h-2-03.png"
+  },
+  {
+    "id": 4,
+    "name": "Nail Mathue",
+    "designation": "Creative Designer",
+    "profilePic": "team/h-2-04.png"
+  }
+]

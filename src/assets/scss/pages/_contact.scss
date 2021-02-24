@@ -1,0 +1,89 @@
+/*==========================================
+28. Contact Page Style CSS
+===========================================*/
+.single-input-item {
+  color: $paragraph;
+  margin-bottom: 30px;
+
+  input,
+  textarea {
+    border: none;
+    border: 1px solid #32a1a4;
+    color: $paragraph;
+    font-weight: 500;
+    display: block;
+    outline: none;
+    padding: 15px 10px;
+    transition: 0.3s;
+    width: 100%;
+
+    &::placeholder {
+      color: $paragraph;
+      font-size: 14px;
+    }
+  }
+
+  .nice-select {
+    line-height: 30px;
+    height: 50px;
+    width: 100%;
+
+    .current {
+      color: #8d8d8d;
+      font-weight: 400;
+    }
+
+    .list {
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    background-color: $secondColor;
+    border-radius: 30px;
+    border-color: $secondColor;
+    font-weight: 100;
+  }
+}
+
+.contact-method {
+  h3 {
+    font-weight: 600;
+    margin-bottom: 43px;
+  }
+
+  &.contact-information {
+    background-color: $brandColor;
+    height: 100%;
+    color: $white;
+    padding: 45px 30px;
+    display: flex;
+    align-items: center;
+
+    @media #{$lg-device,$xl-device} {
+      justify-content: center;
+    }
+
+    h3 {
+      color: $white;
+    }
+
+    .member-social-icons {
+      a {
+        height: auto;
+        width: auto;
+        margin-right: 15px;
+        opacity: 0.9;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// .contact-content-wrap {
+//   box-shadow: 0 10px 60px 0 rgba(71, 74, 182, 0.12);
+// }

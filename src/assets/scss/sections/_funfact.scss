@@ -1,0 +1,52 @@
+/*========================
+16. Fun Fact Style CSS
+==========================*/
+.counter {
+  &-item {
+    margin-top: 40px;
+  }
+
+  &-number {
+    color: $offWhite;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media #{$sm-device} {
+      font-size: 20px;
+    }
+
+    &.plus {
+      &:after {
+        content: '+';
+        position: absolute;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  &-txt {
+    color: $offWhite;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    @media #{$md-device} {
+      font-size: 20px;
+    }
+
+    @media #{$sm-device} {
+      font-size: 16px;
+    }
+  }
+}
+
+.fun-fact-area{
+  padding: 80px 0 75px;
+  position: relative;
+
+  &:before{
+    @include overlay($brandColor, 0.92);
+  }
+}

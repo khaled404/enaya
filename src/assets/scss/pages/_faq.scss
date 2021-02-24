@@ -1,0 +1,21 @@
+/*======================
+21. FAQ Page Style CSS
+=========================*/
+
+.single-subject-by-faq-wrap {
+  margin-top: 50px;
+
+  h2 {
+    font-weight: 600;
+    @include font-size(32px);
+    margin-bottom: 38px;
+
+    @media #{$md-device} {
+      margin-bottom: 30px;
+    }
+
+    @media #{$sm-device} {
+      margin-bottom: 25px;
+    }
+  }
+}

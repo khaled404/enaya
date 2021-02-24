@@ -1,0 +1,55 @@
+/*=====================
+14. Blog Style CSS
+======================*/
+
+.blog-item {
+  background-color: $offWhite;
+  transition: 0.4s;
+  margin-top: 30px;
+
+  .blog-content {
+    padding: 50px 30px 45px;
+
+    @media #{$sm-device} {
+      padding: 30px 15px 25px;
+    }
+
+    h2 {
+      font-weight: 600;
+      margin-bottom: 15px;
+
+      a {
+        color: $headingColor;
+
+        &:hover {
+          color: $hvrColor;
+        }
+      }
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      a {
+        color: $paragraph;
+        font-weight: 400;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @media #{$xs-device} {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 10px 60px 0 rgba(71, 74, 182, 0.16);
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,51 @@
+//== Typography Variable
+$baseFont: 'Open Sans', sans-serif;
+$secondFont: 'Montserrat', sans-serif;
+$baseFontSize: 15px;
+$mdi-icon: 'Material Design Icons';
+$fa-icon: 'FontAwesome';
+
+//== Site Typography Colors
+$maincolor: #092945;
+$secondColor:#32a1a4;
+$paragraph: #7D7D7D;
+$headingColor: #4F4F6F;
+$ashColor: #aaaaaa;
+$borderColor: #eee;
+$hvrColor: #182141;
+
+//== Site Brand Color
+$brandColor: #080b1a;
+$brandColorDark: darken($brandColor, 15%);
+$brandColorLight: lighten($brandColor, 15%);
+
+//== Alternative Color
+$white: #FFFFFF;
+$offWhite: #f8f9fc;
+$black: #000000;
+$blackSoft: #222222;
+$navy: #3b5998;
+$pink: #FF69B4;
+$violet: #9933cc;
+$olive: #559137;
+$green: #008000;
+$red: #e74c3c;
+$orange: #f5740a;
+$yellow: #fbbf00;
+
+//== Social Media Icons Color
+$facebook: #3B5999;
+$twitter: #1DA1F2;
+$pinterest: #CB2028;
+$youtube: #CC332D;
+$reddit: #FF4500;
+$linkedin: #0077B5;
+
+//== Responsive Media Query Variables
+$xlmax-device: 'only screen and (min-width: 1200px) and (max-width: 1599.98px)';
+$xl-device: 'only screen and (min-width: 1200px)';
+$lg-device: 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$md-device: 'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$sm-device: 'only screen and (max-width: 767.98px)';
+$xs-device: 'only screen and (max-width: 575.98px)';
+$xxs-device: 'only screen and (max-width: 479.98px)';

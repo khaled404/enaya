@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "planName": "Free",
+    "currencyType": "$",
+    "planPrice": "00",
+    "subscribePlan": "mo",
+    "planFeatures": [
+      "Branding strategy identity",
+      "Marketing campaign & PR",
+      "Website and app designing",
+      "Content development"
+    ]
+  },
+  {
+    "id": 2,
+    "planName": "Small Business",
+    "currencyType": "$",
+    "planPrice": "49",
+    "subscribePlan": "mo",
+    "planFeatures": [
+      "Content development",
+      "Branding strategy identity",
+      "Marketing campaign & PR",
+      "Website and app designing"
+    ]
+  },
+  {
+    "id": 3,
+    "planName": "Professional",
+    "currencyType": "$",
+    "planPrice": "99",
+    "subscribePlan": "mo",
+    "planFeatures": [
+      "Website and app designing",
+      "Content development",
+      "Branding strategy identity",
+      "Marketing campaign & PR"
+    ]
+  }
+]

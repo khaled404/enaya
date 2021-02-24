@@ -1,0 +1,51 @@
+/*========================
+09. Icon Box Style CSS
+=========================*/
+
+.icon-box-item {
+  display: flex;
+  align-items: center;
+
+  @media #{$md-device} {
+    display: block;
+  }
+
+  @media #{$sm-device} {
+    margin-top: 40px;
+  }
+
+  .icon-box {
+    &__icon {
+      text-align: center;
+      margin-right: 20px;
+      flex-basis: 50px;
+      width: 50px;
+
+      @media #{$md-device} {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__info {
+      flex-basis: calc(100% - 50px);
+      width: calc(100% - 50px);
+
+      @media #{$xl-device} {
+        flex-basis: 215px;
+        width: 215px;
+      }
+
+      @media #{$md-device} {
+        flex-basis: 100%;
+        width: 100%;
+      }
+
+      h5 {
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

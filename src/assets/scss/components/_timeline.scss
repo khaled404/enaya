@@ -1,0 +1,157 @@
+/*========================
+25. Timeline Style CSS
+===========================*/
+
+.cd-timeline-wrap {
+  position: relative;
+  margin-top: 10px;
+
+  .timeline-icon{
+    border: 2px solid $brandColor;
+    border-radius: 50%;
+    color: $brandColor;
+    font-size: 25px;
+    height: 70px;
+    left: 50%;
+    line-height: 65px;
+    position: absolute;
+    text-align: center;
+    top: -70px;
+    transform: translateX(-50%);
+    width: 70px;
+
+    @media #{$md-device, $sm-device} {
+      top: -50px;
+      left: -5px;
+      transform: none;
+      line-height: 45px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .cd-timeline {
+    margin: 0;
+    padding: 90px 0 100px;
+
+    @media #{$sm-device} {
+      padding: 60px 0 70px;
+    }
+
+    &:before {
+      background-color: $brandColor;
+    }
+
+    &:after {
+      background-color: $brandColor;
+      border-radius: 50%;
+      bottom: 0;
+      content: "";
+      height: 20px;
+      left: 50%;
+      margin-left: -10px;
+      position: absolute;
+      width: 20px;
+
+      @media #{$md-device,$sm-device}{
+        left: 0;
+        margin-left: 10px;
+      }
+    }
+
+    &-block {
+      margin: 0 0 100px;
+
+      @media #{$sm-device} {
+        margin: 0 0 30px;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &:nth-child(2n) {
+        .cd-timeline-content {
+          text-align: left;
+        }
+      }
+
+    }
+
+    &-img {
+      background-color: $offWhite;
+      border: 2px solid $brandColor;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      height: 35px;
+      margin-left: -17.5px;
+      top: 25px;
+      width: 35px;
+      z-index: 1;
+
+      @media #{$md-device, $sm-device} {
+        margin-left: 3px;
+      }
+
+      .dot {
+        background-color: $brandColor;
+        border-radius: 50%;
+        display: block;
+        height: 10px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+      }
+    }
+
+    &-content {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 10px 0 0;
+      text-align: right;
+
+      @media #{$md-device, $sm-device} {
+        text-align: left;
+      }
+
+      &:before {
+        display: none;
+      }
+
+      h5 {
+        color: $brandColor;
+        font-weight: 600;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+
+        @media #{$sm-device} {
+          font-size: 16px;
+        }
+      }
+
+      p {
+        margin: 0;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .cd-description {
+        color: $paragraph;
+        font-size: $baseFontSize !important;
+        opacity: 1 !important;
+        padding: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  .cd-heading {
+    @media #{$md-device, $sm-device} {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+/*==========================
+05. Off Canvas Style CSS
+============================*/
+.off-canvas {
+  &-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: visible;
+
+      .off-canvas-inner {
+        transform: none;
+      }
+      
+      .off-canvas-overlay {
+        @include show;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 40px;
+      top: 20px;
+
+      @media #{$sm-device} {
+        right: 20px;
+      }
+
+      img {
+        max-width: 30px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &-cog {
+    .off-canvas-content {
+      padding-right: 30px;
+      padding-left: 30px;
+
+      @media #{$sm-device} {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  &-overlay {
+    background-color: rgba($black, 0.8);
+    cursor: url("../../img/icons/cancel-white.png"), auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include hide;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &-inner {
+    background-color: $secondColor;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: 0.45s;
+    height: 100%;
+    z-index: 3;
+    overflow-y: auto;
+  }
+
+  &-content {
+    width: 380px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @media #{$sm-device} {
+      padding: 65px 0 30px;
+    }
+    @media #{$xs-device} {
+      width: 280px;
+    }
+  }
+}
+
+// Login Form
+.log-in-content-wrap {
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 46px;
+    margin-top: -7px;
+  }
+
+  .sign-up-notification {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+
+    a {
+      color: $brandColor;
+      font-weight: 500;
+    }
+  }
+}
+
+// Social Icons
+.social-icons {
+  a {
+    font-size: 14px;
+    color: $paragraph;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $brandColor;
+    }
+  }
+}
+
+.copyright-content {
+  margin-top: 5px;
+  font-size: 14px;
+}

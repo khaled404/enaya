@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Case Strategy",
+    "text": "voluptatum deleniti atqued corrupti cepturi sinte aeted psamtem quia voluptas sit aut odit aut fugit.",
+    "icon": "service/icon/strategy.png"
+  },
+  {
+    "id": 2,
+    "title": "Track Record",
+    "text": "voluptatum deleniti atqued corrupti cepturi sinte aeted psamtem quia voluptas sit aut odit aut fugit.",
+    "icon": "service/icon/track-record.png"
+  },
+  {
+    "id": 3,
+    "title": "Research & Investigation",
+    "text": "voluptatum deleniti atqued corrupti cepturi sinte aeted psamtem quia voluptas sit aut odit aut fugit.",
+    "icon": "service/icon/research.png"
+  },
+  {
+    "id": 4,
+    "title": "Case Analysis",
+    "text": "voluptatum deleniti atqued corrupti cepturi sinte aeted psamtem quia voluptas sit aut odit aut fugit.",
+    "icon": "service/icon/analysis.png"
+  }
+]

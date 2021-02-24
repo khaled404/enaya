@@ -1,0 +1,63 @@
+/*=========================
+20. Accordion Style CSS
+===========================*/
+
+.brand-accordion {
+  .card {
+    border: 1px solid $borderColor !important;
+    border-radius: 0;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-header {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+
+      button {
+        font-weight: 600;
+        padding: 0;
+        transition: none;
+        box-shadow: none;
+        position: relative;
+        width: 100%;
+        text-align: left;
+
+
+        &:after {
+          content: "+";
+          position: absolute;
+          right: 0;
+          font-size: 20px;
+          color: $brandColor;
+          line-height: 1;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &[aria-expanded='true'] {
+          color: $brandColor;
+          margin-bottom: 10px;
+
+          &:after {
+            content: "-";
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 0;
+      font-size: 13px;
+      line-height: 2;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

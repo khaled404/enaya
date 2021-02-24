@@ -1,0 +1,19 @@
+/*============================
+18. About History Style CSS
+=============================*/
+.history-item{
+  margin-top: 40px;
+  @media #{$xl-device} {
+    padding-right: 20px;
+  }
+
+  h6{
+    font-weight: 700;
+    color: $brandColor;
+  }
+
+  h3{
+    font-size: 22px;
+    font-weight: 500;
+  }
+}

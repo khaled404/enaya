@@ -1,0 +1,114 @@
+/*===========================
+--. Footer Style CSS
+===========================*/
+.footer-area {
+  border-top: 1px solid #EBEBEB;
+  background-color: $white; 
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  .footer-top {
+    padding-bottom: 20px;
+  }
+}
+
+.widget-item {
+  margin-top: 38px;
+
+  .widget-title {
+    color: $brandColor;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: -1px;
+    margin-bottom: 22px;
+
+    @media #{$sm-device} {
+      margin-bottom: 15px;
+    }
+  }
+
+  // address {
+  //   line-height: 2;
+  //   margin-bottom: 0;
+  //   font-weight: 500;
+  // }
+}
+
+.widget-list {
+  li {
+    line-height: 2;
+
+    a {
+      color: $paragraph;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 14px;
+      color: #7D7D7D;
+
+      &:hover {
+        color: $brandColor;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+.footer-numbers {
+
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $brandColor;
+  font-weight: 600;
+
+  span {
+    color: $secondColor;
+    font-size: 22px;
+    margin-right: 5px;
+  }
+  
+}
+// About Widget
+.about-widget {
+  img {
+    max-width: 120px;
+    margin-bottom: 20px;
+
+    @media(max-width : 768px) {
+      margin: 0;
+
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid #EBEBEB;
+
+  .privacy-list {
+    display: flex;
+    margin-top: 25px;
+
+    li {
+      margin-right: 15px;
+
+      a {
+        color: $brandColor;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.copyright-txt {
+  margin-top: 25px;
+  font-weight: 500;
+  color: #9FA4AF;
+  font-weight: 100;
+
+  .hover-color {
+    font-weight: 500;
+  }
+
+  @media #{$sm-device} {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "quote": "Very much happy with provide the best Business Solutions for Clients to grow up their Business very sharply.",
+    "author": "David Loyed",
+    "authorThumb": "testimonial/h-2-t-01.png",
+    "designation": "CTO, Aflex Group"
+  },
+  {
+    "id": 2,
+    "quote": "Very much happy with provide the best Business Solutions for Clients to grow up their Business very sharply.",
+    "author": "Alex Tuntuni",
+    "authorThumb": "testimonial/h-2-t-02.png",
+    "designation": "Co-Founder, Tuntuni Group"
+  },
+  {
+    "id": 3,
+    "quote": "Very much happy with provide the best Business Solutions for Clients to grow up their Business very sharply.",
+    "author": "John Fault",
+    "authorThumb": "testimonial/h-2-t-03.png",
+    "designation": "COO, Mafia Group"
+  }
+]

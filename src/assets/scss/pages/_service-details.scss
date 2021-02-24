@@ -1,0 +1,296 @@
+/*==========================================
+Home Page Services Section
+===========================================*/
+
+.service-section {
+  padding: 80px 0;
+  background-color: #f9fafb;
+
+  .service-contetn {
+    h3 {
+      color: $maincolor;
+      font-size: 50px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: $paragraph;
+    }
+  }
+}
+
+/*==========================================
+22. Services Details Page Style CSS
+===========================================*/
+
+.service-details-thumb {
+  .slick-dots {
+    display: flex !important;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.service-details-info {
+  margin-top: 35px;
+
+  @media #{$sm-device} {
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .service-feature {
+    li {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: "\f046";
+        font-family: $fa-icon;
+        font-size: 30px;
+        line-height: 1;
+        position: absolute;
+        top: 5px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.how-we-works-content {
+  .icon-box-item {
+    align-items: flex-start;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    .icon-box {
+      &__info {
+        width: 100%;
+        flex-basis: auto;
+      }
+    }
+  }
+
+  &.service-details-page {
+    .icon-box-item {
+      margin-top: 40px;
+    }
+  }
+}
+
+.pagination-wrap {
+  border-top: 1px solid $borderColor;
+  padding-top: 10px;
+  margin-top: 55px;
+
+  @media #{$sm-device} {
+    margin-top: 40px;
+  }
+
+  .pagination {
+    li {
+      &.prev {
+        margin-right: auto;
+      }
+
+      &.next {
+        margin-left: auto;
+      }
+
+      a,
+      button {
+        color: $brandColor;
+        font-weight: 600;
+        margin: 0 10px;
+
+        &.disabled {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+
+        &.current {
+          position: relative;
+
+          &:before {
+            background-color: $brandColor;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 2px;
+            height: 2px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Services Details Sidebar
+.sidebar {
+  &-single {
+    background-color: $offWhite;
+    padding: 30px;
+    margin-top: 40px;
+
+    @media #{$md-device, $sm-device} {
+      margin-top: 30px;
+    }
+  }
+
+  &-title {
+    font-size: 26px;
+    margin-bottom: 23px;
+    font-weight: 500;
+
+    @media #{$xs-device} {
+      font-size: 22px;
+    }
+  }
+}
+
+// Services List
+.service-list {
+  li {
+    border-bottom: 1px solid $borderColor;
+    padding: 13px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    a {
+      color: $paragraph;
+      font-weight: 600;
+      vertical-align: middle;
+
+      img,
+      i {
+        margin-right: 15px;
+        vertical-align: middle;
+        font-size: 25px;
+        height: 25px;
+        width: 25px;
+      }
+
+      &:hover {
+        color: $headingColor;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.service-details-wrapper {
+  .service-details-content {
+    @media #{$xl-device} {
+      padding-right: 70px;
+    }
+  }
+
+  .sidebar-wrap {
+    @media #{$xl-device} {
+      margin-left: -30px;
+    }
+  }
+}
+.overflo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.5);
+  z-index: 100;
+  transition: 0.5s;
+
+  visibility: hidden;
+  opacity: 0;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.model-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  z-index: 101;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  width: 50%;
+  height: 80%;
+  padding: 15px;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  background-color: #f9fafb;
+  border-radius: 15px;
+}
+.scroll {
+  overflow: hidden;
+}
+.textarea {
+  border: 1px solid #32a1a4;
+  border-radius: 30px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.hospitals-box {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .image-box {
+    padding-right: 15px;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .conetnt {
+    h4 {
+      color: #32a1a4;
+      font-size: 17px;
+    }
+    h5 {
+      color: #7d7d7d;
+      font-size: 15px;
+    }
+    p {
+      color: #7d7d7d;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,498 @@
+.doctor-box {
+
+    padding-top: 80px;
+
+    @media(max-width: 500px) {
+
+        padding-top: 30px;
+    }
+
+    .media{
+
+        @media(max-width: 500px) {
+
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .doc-name {
+        color: $maincolor;
+        font-size: 35px;
+        text-transform: capitalize;
+        font-weight: 600;
+
+        @media(max-width: 500px) {
+
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    }
+
+    .doc-spec {
+        color: $maincolor;
+        font-size: 16px;
+
+        .price {
+            color: $secondColor;
+        }
+    }
+
+    .work-hours {
+
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        @media(max-width: 768px){
+
+            display: block;
+        }
+
+        .text {
+            color: $secondColor;
+            font-weight: 600;
+
+            @media(max-width: 500px){
+
+                font-size: 13px;
+            }
+            .title {
+
+                color: $maincolor;
+            }
+        }
+
+        .rate img {
+            margin-right: 5px;
+        }
+    }
+
+    .description {
+        padding: 50px 0;
+
+        .title {
+            color: $maincolor;
+            margin-bottom: 25px;
+        }
+        .text {
+            line-height: 1.9em;
+        }
+    }
+
+
+}
+
+/*============================== Booking ==================================*/
+
+.booking-section {
+
+    .title {
+        color: $maincolor;
+        margin-bottom: 25px;
+    }
+
+    .tab-title {
+        color: #959595;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        display: block;
+    }
+    .nav-tabs {
+        border: none;
+
+        .nav-link {
+            
+            cursor: pointer;
+            border: none;
+            color: $paragraph;
+
+            &:hover {
+                border: none;
+                color: $secondColor;
+            }
+
+            &.active {
+                border: none;
+                color: $secondColor;
+            }
+        }
+    }
+
+    .tab-content {
+
+        .tab-pane {
+
+            .pane-box {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .single-input-item {
+
+                    width: 20%;
+                    margin-bottom: 10px;
+
+                    @media(max-width: 500px){
+
+                        width: 30%;
+                    }
+
+                    input {
+
+                        &[type="radio"] {
+                            visibility: hidden;
+                        }
+
+                        &[type="submit"] {
+                            border-radius: 30px !important;
+                        }
+                    }
+
+                    label {
+                        position: relative;
+                        cursor: pointer;
+                        width: 95%;
+                        text-align: center;
+                        padding: 7px 0;
+                        margin-right: 5px;
+                        color: $maincolor;
+                        font-size: 13px;
+                        background-color: #E8EFF0;
+                        border-radius: 30px;
+                    }
+
+
+                    input[type="radio"]:checked+label { 
+
+                       color: $white;
+                       background-color: $secondColor;
+                    } 
+                }
+
+                
+
+                
+            }
+        }
+
+        
+    }
+}
+.costum-book {
+
+    background-color: $secondColor;
+    color: $white;
+    width: 100%;
+    text-align: center;
+    border-radius:30px ;
+    display: block;
+    padding: 10px 15px;
+}
+
+/*============================== Rate ==================================*/
+
+.doctor-rate {
+
+    padding: 80px 0;
+
+    .media {
+
+        padding: 25px 0;
+        border-bottom: 1px solid #EBEBEB;
+
+        .title {
+            color: $maincolor;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+    
+        .name-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .name {
+                color: $secondColor;
+                font-size: 15px;
+            }
+    
+            img {
+                width: 53px;
+                height: 8px;
+            }
+        }
+    
+        .rate-date {
+            font-size: 14px;
+        }
+    
+        .comment {
+            color: $maincolor;
+            font-size: 14px;
+        }
+    }
+    
+}
+
+/*============================== Book Page ==================================*/
+
+.book {
+
+    padding: 80px 0;
+
+    .book-form {
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+
+            .single-input-item {
+
+                width: 50%;
+                padding-right: 10px;
+                padding-left: 10px;
+
+                input {
+
+                    &[type="radio"] {
+                        visibility: hidden;
+                    }
+                }
+    
+                label {
+                    position: relative;
+                    cursor: pointer;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0;
+                    margin-right: 5px;
+                    color: $maincolor;
+                    font-size: 16px;
+                    background-color: #E8EFF0;
+                    border-radius: 30px;
+                }
+
+                input[type="radio"]:checked+label { 
+
+                    color: $white;
+                    background-color: $secondColor;
+                 } 
+            }
+            
+        }
+
+        .form-body {
+
+            input {
+                border: 1px solid #32a1a4;
+                border-radius: 30px;
+                padding: 15px;
+            }
+        }
+
+        .form-footer {
+
+            display: flex;
+            justify-content: space-between;
+
+            .single-input-item {
+                display: flex;
+                align-items: baseline;
+                justify-content: start;
+
+                input {
+                    width: auto;
+                    margin-right: 10px;
+                }
+
+                label {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .payment-form {
+
+            input {
+                border: 1px solid #EBEBEB;
+
+                &:focus {
+
+                    border-color: $secondColor;
+                }
+            }
+        }
+    }
+
+    .doc-box {
+
+        border: none;
+        background-color: #FFF;
+        padding: 30px 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 10px #e8feff;
+
+        img {
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        .name {
+            color: $maincolor;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: 600;
+
+            @media(max-width: 500px) {
+
+                font-size: 20px;
+            }
+        }
+
+        .doc-spec {
+
+            font-size: 16px;
+            color: $paragraph;
+            margin: 15px 0;
+
+            .price {
+                margin-left: 10px;
+                color: $secondColor;
+            }
+        }
+
+        .book-info {
+
+            margin-top: 25px;
+
+            .book-detail {
+
+                display: flex;
+                justify-content: space-around;
+                margin-top: 25px;
+
+                @media(max-width: 500px) {
+
+                    display: block;
+                }
+    
+                .date, .time {
+                    margin-right: 20px;
+
+                    .title {
+
+                        color: #959595; 
+                        font-size: 14px;
+                    }
+
+                    .text {
+                        color: $secondColor;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+
+/*============================== Complete Book Page ==================================*/
+
+
+.complete-book {
+
+    padding: 80px 0;
+
+    .book-head {
+
+        margin-bottom: 50px;
+
+        .title {
+
+            margin: 20px 0;
+        }
+    }
+
+    .doc-box {
+
+        border: none;
+        background-color: #FFF;
+        padding: 30px 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 10px #e8feff;
+        width: 70%;
+        margin: 0 auto;
+
+        @media(max-width: 768px) {
+
+            width: 100%;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        .name {
+            color: $maincolor;
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: 600;
+            @media(max-width : 500px) {
+
+                font-size: 20px;
+            }
+        }
+
+        .doc-spec {
+
+            font-size: 16px;
+            color: $paragraph;
+            margin: 15px 0;
+
+            .price {
+                margin-left: 10px;
+                color: $secondColor;
+            }
+        }
+
+        .book-info {
+
+            margin-top: 25px;
+
+            .book-detail {
+
+                display: flex;
+                justify-content: space-around;
+                margin-top: 25px;
+
+                @media(max-width : 500px) {
+
+                    display: block;
+                }
+    
+                .date, .time {
+                    margin-right: 20px;
+
+                    .title {
+
+                        color: #959595; 
+                        font-size: 14px;
+                    }
+
+                    .text {
+                        color: $secondColor;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}

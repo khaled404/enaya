@@ -1,0 +1,36 @@
+[
+    {
+        "id"      : 1,
+        "icon"    : "phone.png",
+        "title"   : "Phone",
+        "content" : [
+            "(+20) 111 993 9005 ",
+            "(+20) 111 993 0119"
+        ],
+        "link" : [
+            "+20111 993 9005",
+            "+20111 993 0119"
+        ]
+        
+    },
+    {
+        "id"      : 2,
+        "icon"    : "pin.png",
+        "title"   : "Address",
+        "content" : [ "Sohag, El Gomhoria Street, above cip bank, next to Alex Bank, the fifth floor" ],
+        "link"    : ["https://goo.gl/maps/jFvBskmPFNvEiC848"]
+    },
+    {
+        "id"      : 3,
+        "icon"    : "mail.png",
+        "title"   : "Email",
+        "content" : [
+            "Suppor@Enaya.com.eg",
+            "Info@Enaya.com.eg"
+        ],
+        "link" : [
+            "suppor@Enaya.com.eg",
+            "info@Enaya.com.eg"
+        ]
+    }
+]

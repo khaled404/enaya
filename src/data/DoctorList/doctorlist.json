@@ -1,0 +1,87 @@
+[
+    {
+        "id" : 1,
+        "name" : "Ahmed Said abdellatif",
+        "specialist" : "Arthroscopy and Sports injuries",
+        "price" : "250",
+        "img" : "man.jpg",
+        "workingHours" : "Saturday to Wednesday 2:00 - 9:00 PM",
+        "description" : "Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie",
+        "location" : "Sohag - Abdel Moneim Riad Sq",
+        "wating" : 30,
+        "patients" : 300,
+        "appointment" : [{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] },{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] } ]
+    },
+    {
+        "id" : 2,
+        "name" : "Ahmed Said abdellatif",
+        "specialist" : "Arthroscopy and Sports injuries",
+        "price" : "250",
+        "img" : "woman.jpg",
+        "workingHours" : "Saturday to Wednesday 2:00 - 9:00 PM",
+        "description" : "Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie",
+        "location" : "Sohag - Abdel Moneim Riad Sq",
+        "wating" : 30,
+        "patients" : 300,
+        "appointment" : [{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] },{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] } ]
+    },
+    {
+        "id" : 3,
+        "name" : "Ahmed Said abdellatif",
+        "specialist" : "Arthroscopy and Sports injuries",
+        "price" : "250",
+        "img" : "woman.jpg",
+        "workingHours" : "Saturday to Wednesday 2:00 - 9:00 PM",
+        "description" : "Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie",
+        "location" : "Sohag - Abdel Moneim Riad Sq",
+        "wating" : 30,
+        "patients" : 300,
+        "appointment" : [{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] },{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] } ]
+    },
+    {
+        "id" : 4,
+        "name" : "Ahmed Said abdellatif",
+        "specialist" : "Arthroscopy and Sports injuries",
+        "price" : "250",
+        "img" : "woman.jpg",
+        "workingHours" : "Saturday to Wednesday 2:00 - 9:00 PM",
+        "description" : "Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie",
+        "location" : "Sohag - Abdel Moneim Riad Sq",
+        "wating" : 30,
+        "patients" : 300,
+        "appointment" : [{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] },{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] } ]
+    },
+    {
+        "id" : 5,
+        "name" : "Ahmed Said abdellatif",
+        "specialist" : "Arthroscopy and Sports injuries",
+        "price" : "250",
+        "img" : "woman.jpg",
+        "workingHours" : "Saturday to Wednesday 2:00 - 9:00 PM",
+        "description" : "Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie",
+        "location" : "Sohag - Abdel Moneim Riad Sq",
+        "wating" : 30,
+        "patients" : 300,
+        "appointment" : [
+            { "25 / 9 / 2020" : [ 
+                {   "pm" : ["12:00", "13:00", "14:00"],
+                    "am" : ["8:00", "9:00", "10:00"] 
+                } 
+                ] },
+            { "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] } 
+        ]
+    },
+    {
+        "id" : 6,
+        "name" : "Ahmed Said abdellatif",
+        "specialist" : "Arthroscopy and Sports injuries",
+        "price" : "250",
+        "img" : "woman.jpg",
+        "workingHours" : "Saturday to Wednesday 2:00 - 9:00 PM",
+        "description" : "Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie Specialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American AcademieSpecialist in Dermatology , beauty and laser Holds the American Board of Non-Surgical Plastic Medicine Diploma of hair transplantation of American Academie",
+        "location" : "Sohag - Abdel Moneim Riad Sq",
+        "wating" : 30,
+        "patients" : 300,
+        "appointment" : [{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] },{ "25 / 9 / 2020" : [ {"pm" : ["12:00", "13:00", "14:00"],"am" : ["8:00", "9:00", "10:00"] } ] } ]
+    }
+]

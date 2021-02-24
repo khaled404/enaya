@@ -1,0 +1,62 @@
+/*==========================
+04. Index Area Style CSS
+===========================*/
+
+.header-area{
+  // background-color: $brandColor;
+  // padding: 20px 0;
+  transition: 0.4s;
+  border-bottom: 1px solid $white;
+
+  @media(max-width :768px ){
+
+    padding: 10px;
+  }
+
+  .header-action {
+
+    @media(max-width :768px ){
+
+      display: none;
+    }
+
+    li {
+      display: inline-block;
+      margin-left: 10px;
+
+      a {
+        color: $white;
+        background-color: $secondColor;
+        padding: 10px 25px;
+        border-radius: 25px;
+        border: 1px solid $secondColor;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+          background-color: transparent;
+          color: $secondColor;
+        }
+
+        &.login {
+          color: $secondColor;
+          background-color: transparent;
+
+          &:hover {
+            background-color: $secondColor;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.no-postion {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 66;
+}
+

@@ -1,0 +1,71 @@
+.specialties {
+    background-color: #F9FAFB;
+    padding:  80px 0;
+
+    h2 {
+        font-size: 48px;
+        color: #4F4F6F;
+        margin-bottom: 20px;
+
+        @media(max-width: 500px){
+
+            font-size: 30px;
+        }
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.7em;
+        font-size: 18px;
+        color: #7D7D7D;
+        font-weight: 100;
+
+        @media(max-width: 500px){
+
+            width: 100%;
+        }
+    }
+
+    .spec-list {
+        margin-top: 80px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+        li {
+
+            width: 16.66666666667%;
+            margin-bottom: 40px;
+
+            @media(max-width: 500px){
+
+                width: 50%;
+            }
+
+            a {
+                color: #7D7D7D;
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                    
+                }
+
+                span {
+                    padding-top: 5px;
+                    display: block;
+
+                    @media(max-width: 500px){
+
+                        font-size: 13px;
+                    }
+
+                }
+            }
+        }
+
+        
+        
+    }
+}

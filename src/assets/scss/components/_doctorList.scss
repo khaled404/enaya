@@ -1,0 +1,107 @@
+.doc-box {
+    border: 1px solid #EEE;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    @media(max-width :768px) {
+
+        margin: 20px 0;
+    }
+
+    .doc-img {
+        height: 175px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        @media(max-width: 500px) {
+
+            height: auto;
+        }
+    }
+
+    p{
+        margin: 0;
+    }
+
+    .doc-info {
+        padding: 20px 0;
+
+        @media(max-width: 500px) {
+
+            padding: 20px 20px;
+        }
+
+        .doc-name {
+            color: $secondColor;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            color: $paragraph;
+        }
+
+        .rate-num {
+            font-size: 13px;
+            font-weight: 600;
+            color: $maincolor;
+        }
+
+        .wating-hours {
+            margin-top: 15px;
+            color: $maincolor;
+            font-weight: 600;
+
+            i {
+                padding-right: 5px;
+                color: $secondColor;
+            }
+        }
+    }
+
+    .doc-feat {
+        padding: 15px 0;
+
+        ul {
+
+            @media(max-width: 500px) {
+
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 25px;
+            }
+
+            li {
+
+                font-size: 13px;
+                line-height: 1.9em;
+                color: $maincolor;
+                font-weight: 600;
+
+                i {
+                    padding-right: 5px;
+                    display: inline-block;
+                    color: $secondColor;
+                }
+            }
+        }
+
+        .book-btn {
+            margin-top: 15px;
+            a {
+                border: 1px solid $secondColor;
+                padding: 7px 50px;
+                text-align: center;
+                border-radius: 5px;
+                color: $secondColor;
+                transition: all .25s ease-in-out;
+
+                &:hover {
+                    background-color: $secondColor;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

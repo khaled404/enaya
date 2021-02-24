@@ -1,0 +1,388 @@
+/*===========================
+26. Blog Page Style CSS
+=============================*/
+.blog-content-wrapper {
+  .blog-item {
+    .blog-thumb{
+      img{
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+      }
+    }
+
+    .blog-content {
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &.blog-list {
+    .blog-item {
+      .blog-content {
+        padding-top: 25px;
+        padding-bottom: 20px;
+        @media #{$xl-device, $md-device, $lg-device} {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.single-sidebar-item-wrap {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .sidebar-title {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: -3px;
+
+    &:before {
+      background-color: $brandColor;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 30px;
+    }
+  }
+}
+
+// Sidebar List Style
+.sidebar-list {
+  li {
+    a {
+      border: 1px solid $borderColor;
+      border-bottom: 0;
+      color: $blackSoft;
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+      padding: 20px;
+
+      &:hover {
+        color: $brandColor;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+  }
+}
+
+// Feature Post Style
+.sidebar-body {
+  .latest-blog-widget {
+    .single-blog-item {
+      display: flex;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .post-info {
+        flex-basis: calc(100% - 75px);
+
+        h6 {
+          font-weight: 600;
+          font-size: 14px;
+
+          a {
+            color: $blackSoft;
+
+            &:hover {
+              padding-left: 0;
+            }
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .post-thumb {
+        max-width: 65px;
+        flex-basis: 65px;
+        max-height: 65px;
+        overflow: hidden;
+        margin-right: 10px;
+
+        img{
+          height: 65px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+// Sidebar Newsletter
+.sidebar-newsletter {
+  background-color: $offWhite;
+  padding: 56px 30px 60px;
+
+  @media #{$lg-device} {
+    padding: 56px 10px 60px;
+  }
+
+  h3 {
+    color: $brandColor;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 26px;
+  }
+
+  form {
+    input {
+      background-color: #eeeeee;
+      font-weight: 500;
+      border: none;
+      display: block;
+      outline: none;
+      padding: 15px;
+      width: 100%;
+
+      @media #{$lg-device} {
+        padding: 15px 10px;
+      }
+    }
+
+    .btn {
+      background-color: transparent;
+      border-color: $brandColor;
+      border-radius: 5px;
+      color: $brandColor;
+      font-weight: 600;
+      width: 100%;
+      padding: 10px 15px;
+      margin-top: 25px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $brandColor;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Instagram Feed
+.sidebar-body {
+  .instagram-feed {
+    .instagram-gallery {
+      margin: -5px -2.5px 0;
+
+      .instagram-item {
+        max-width: calc(33.333% - 5px);
+        display: inline-block;
+        margin: 5px 2.5px 0;
+      }
+    }
+
+    .insta-follow {
+      color: $paragraph;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1;
+      margin-top: 29px;
+      margin-bottom: 0;
+
+      a {
+        color: $black;
+        font-weight: 600;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
+/*===================================
+27. Blog Details Page Style CSS
+===================================*/
+.blog-post-details {
+  .blog-post-thumb {
+    margin-bottom: 50px;
+
+    @media #{$sm-device} {
+      margin-bottom: 40px;
+    }
+
+    img{
+      object-fit: cover;
+      height: 600px;
+      width: 100%;
+    }
+  }
+
+  .blog-post-txt {
+    h2 {
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    img {
+      margin-bottom: 15px;
+    }
+  }
+
+  .share-article{
+    margin-top: 50px;
+    h6{
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .member-social-icons{
+      border-top: 1px solid $borderColor;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .comment-area-wrapper{
+    .btn-outline{
+      border-radius: 0;
+      border-width: 1px;
+    }
+  }
+}
+
+
+.author-info {
+  border-top: 8px solid $offWhite;
+  border-bottom: 1px solid $borderColor;
+  padding: 20px 0;
+
+  .author-thumb {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 15px;
+  }
+
+  .author-txt {
+    text-align: center;
+
+    h5 {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 0;
+
+      .designation {
+        display: block;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+    }
+
+    .member-social-icons {
+      justify-content: center;
+      margin-top: 15px;
+
+      a {
+        color: $paragraph;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        margin-right: 15px;
+        line-height: 1;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/*============================
+Start Comment Area Wrapper
+============================*/
+.comment-area-wrapper {
+  margin-top: 55px;
+
+  h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+
+    @media #{$sm-device} {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.single-comment-wrap {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.comment-reply {
+    margin-left: 50px;
+
+    @media #{$sm-device} {
+      margin-left: 20px;
+    }
+  }
+
+  .author-thumb {
+    border-radius: 3px;
+    margin-right: 15px;
+    height: 70px;
+    max-width: 70px;
+    flex-basis: 70px;
+    overflow: hidden;
+  }
+
+  .comments-info {
+    margin-top: -4px;
+    flex-basis: calc(100% - 70px);
+  }
+
+  .comment-footer {
+    margin-top: 8px;
+    a {
+      font-size: 14px;
+      color: $paragraph;
+
+      strong {
+        color: $blackSoft;
+      }
+
+      &.btn-reply {
+        color: $blackSoft;
+        &:hover {
+          color: $brandColor;
+        }
+      }
+    }
+  }
+}

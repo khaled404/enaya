@@ -1,0 +1,29 @@
+{
+  "categories" : [
+    {
+      "id": 1,
+      "cate_name": "DESIGN",
+      "cate_link": "/"
+    },
+    {
+      "id": 2,
+      "cate_name": "FURNITURE",
+      "cate_link": "/"
+    },
+    {
+      "id": 3,
+      "cate_name": "INTERIOR",
+      "cate_link": "/"
+    },
+    {
+      "id": 4,
+      "cate_name": "LIFESTYLE",
+      "cate_link": "/"
+    },
+    {
+      "id": 5,
+      "cate_name": "MEDIA",
+      "cate_link": "/"
+    }
+  ]
+}

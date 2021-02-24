@@ -1,0 +1,137 @@
+/*==============================
+19. Pricing Table Style CSS
+================================*/
+
+.pricing-plan-buttons {
+  ul {
+    li {
+      a {
+        background-color: transparent;
+        border: 2px solid $brandColor;
+        color: $paragraph;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 13px 40px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        @media #{$sm-device} {
+          padding: 10px 20px;
+        }
+
+        &:before {
+          background-color: $brandColor;
+          content: '';
+          position: absolute;
+          left: -100%;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+        }
+
+        &.active {
+          color: $white;
+
+          &:before {
+            transition: 0.3s;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pricing-plan-item {
+  text-align: center;
+  background-color: $offWhite;
+  padding: 60px 25px;
+  transition: 0.3s;
+  margin-top: 30px;
+
+  .plan-name {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .plan-price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 30px 0;
+
+    @media #{$sm-device} {
+      margin: 15px 0;
+    }
+
+    .dollar {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 1;
+      padding-right: 3px;
+    }
+
+    .price-type {
+      font-weight: 500;
+    }
+
+    .dollar, .price-type {
+      margin-bottom: 8px;
+      display: block;
+    }
+
+  }
+
+  .price-list {
+    li {
+      margin-bottom: 10px;
+      font-weight: 500;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '\f05d ';
+        font-family: $fa-icon;
+        font-size: 13px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .pricing-plan-footer {
+    margin-top: 50px;
+
+    @media #{$sm-device} {
+      margin-top: 30px;
+    }
+
+    .btn-outline {
+      border-radius: 6px;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      @media #{$lg-device,$xl-device} {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}

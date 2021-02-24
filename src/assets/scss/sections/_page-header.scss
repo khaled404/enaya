@@ -1,0 +1,97 @@
+/*===========================
+17. Page Index Style CSS
+=============================*/
+
+.page-header-area {
+  .page-header-content-inner {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+
+    @media(max-width : 500px) {
+
+      height: 190px;
+      text-align: center;
+      
+    }
+
+
+
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+      width: 70%;
+      font-size: 25px;
+      @include font-size(48px);
+      
+      @media(max-width : 500px){
+
+        width: 100%;
+        font-size: 20px;
+        color: $maincolor !important;
+        text-align: center; 
+      }
+    }
+
+    p {
+      @media #{$xl-device} {
+        max-width: 70%;
+      }
+      @media(max-width : 500px){
+        color: $maincolor !important;
+      }
+    }
+  }
+}
+
+.breadcrumb-wrap{
+  margin-top: 25px;
+
+  @media #{$sm-device} {
+    margin-top: 15px;
+  }
+
+  .breadcrumb{
+    background-color: transparent;
+    border-radius: 0;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    li{
+
+      &:last-child{
+        a{
+          &:after{
+            display: none;
+          }
+        }
+      }
+
+      a{
+        color: $white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        position: relative;
+
+        &:after{
+          content: '-';
+          margin: 0 20px;
+          pointer-events: none;
+
+          @media #{$sm-device} {
+            margin: 0 10px;
+          }
+        }
+
+        &.current{
+          pointer-events: none;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

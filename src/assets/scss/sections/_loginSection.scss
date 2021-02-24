@@ -1,0 +1,37 @@
+.login-section {
+    padding: 80px 0;
+
+    @media(max-width: 500px) {
+
+        padding: 60px 0;
+    }
+
+    h3 {
+        width: 45%;
+        margin: 0 auto;
+        font-weight: 100;
+        font-size: 25px;
+
+        @media(max-width: 500px) {
+
+            width: 100%;
+            line-height: 1.6;
+        }
+    }
+
+    .log-btn {
+        margin-top: 50px;
+
+        a {
+            color: $white ;
+            background-color: #5554DB;
+            border-color: #5554DB;
+            font-size: 18px;
+
+            &:hover {
+                background-color: transparent;
+                color: #5554DB;
+            }
+        }
+    }
+}

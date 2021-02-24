@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Provide the best solutions for your business",
+    "text": "Businex always try to provide the best Business Solutions for Clients to grow up their Business very sharply and smoothly.",
+    "bg": "slider/h-2-01.jpg",
+    "btnText": "Learn More",
+    "btnLink": "/about"
+  },
+  {
+    "id": 2,
+    "title": "Invest your money <br/> with us",
+    "text": "Businex always try to provide the best Business Solutions for Clients to grow up their Business very sharply and smoothly.",
+    "bg": "slider/h-2-02.jpg",
+    "btnText": "Learn More",
+    "btnLink": "/about"
+  }
+]

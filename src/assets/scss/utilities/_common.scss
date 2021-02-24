@@ -1,0 +1,316 @@
+/*============================
+03. Common Style CSS
+==============================*/
+/*-----------------
+Overflow
+-------------------*/
+.fix {
+  overflow: hidden;
+
+  &-x {
+    overflow-x: hidden;
+  }
+
+  &-y {
+    overflow-y: hidden;
+  }
+}
+
+/*-----------------
+Section Title
+-------------------*/
+.section-title {
+  margin-bottom: 55px;
+
+  @media #{$sm-device} {
+    margin-bottom: 40px;
+  }
+
+  h6 {
+    margin-bottom: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    @media #{$sm-device} {
+      font-size: 24px;
+    }
+  }
+
+  &--light {
+    color: #bbbbbb;
+
+    h2, h6 {
+      color: $white;
+    }
+  }
+}
+
+/*----------------------
+Background Image
+-----------------------*/
+.bg-img {
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+
+/*----------------------
+Container
+-----------------------*/
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  &-fluid {
+    padding: 0 100px;
+
+    @media #{$lg-device} {
+      padding: 0 15px;
+    }
+
+    @media #{$md-device, $sm-device} {
+      padding: 0 30px;
+    }
+
+    @media #{$xxs-device} {
+      padding: 0 15px;
+    }
+  }
+}
+
+
+/*----------------------
+Button Style
+-----------------------*/
+.btn {
+  &-brand {
+    background-color: $brandColor;
+    border-radius: 100px;
+    color: $white;
+    padding: 16px 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+      color: $white;
+    }
+
+    @media #{$sm-device} {
+      padding: 13px 25px;
+    }
+  }
+
+  &-outline {
+    border: 2px solid $brandColor;
+    border-radius: 100px;
+    color: $paragraph;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 18px 55px;
+
+    @media #{$md-device} {
+      padding: 18px 50px;
+      font-size: 16px;
+    }
+
+    @media #{$sm-device} {
+      padding: 15px 40px;
+      font-size: 15px;
+    }
+
+
+    &:hover {
+      background-color: $brandColor;
+      color: $white;
+    }
+  }
+}
+
+
+/*----------------------
+Slick Index
+-----------------------*/
+.slick-list {
+  .slick-slide {
+    border: 0 solid transparent !important;
+
+    & > div {
+      & > div {
+        vertical-align: middle;
+        outline: none;
+      }
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  height: 12px;
+
+  @media #{$lg-device, $xl-device} {
+    justify-content: flex-start;
+  }
+
+  li {
+    margin-right: 10px;
+
+    button {
+      // border: 2px solid $secondColor;
+      border-radius: 50%;
+      text-indent: -100000px;
+      height: 12px;
+      width: 12px;
+      background-color: $white;
+    }
+
+    &.slick-active {
+      button {
+        background-color: $secondColor;
+      }
+    }
+  }
+
+  &--light {
+    li {
+      button {
+        border-color: $white;
+      }
+
+      &.slick-active {
+        button {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through 6 {
+  .slick-row-#{5 * $i} {
+    .slick-list {
+      margin: 0 #{-2.5px * $i};
+
+      .slick-slide {
+        margin: 0 #{2.5px * $i};
+      }
+    }
+  }
+}
+
+
+/*--------------------------------
+Scroll Top Button
+----------------------------------*/
+.btn-scroll-top {
+  background-color: $brandColor;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  color: $white;
+  cursor: pointer;
+  @include font-size(25px);
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  z-index: 999;
+  @include hide;
+
+  @media #{$sm-device} {
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+  }
+
+  &:hover {
+    background-color: $hvrColor;
+  }
+
+  &.show {
+    bottom: 30px;
+    @include show;
+  }
+}
+
+
+/*--------------------------------
+Blockquote Style
+----------------------------------*/
+blockquote, .blockquote {
+  background-color: $offWhite;
+  color: $paragraph;
+  @include font-size(20px);
+  line-height: 1.4;
+  padding: 42px 44px 80px;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media #{$sm-device} {
+    padding: 20px 22px 60px;
+  }
+
+  &:before {
+    content: '\f10e';
+    font-family: $fa-icon;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    @media #{$sm-device} {
+      right: 30px;
+      bottom: 20px;
+    }
+  }
+
+  &-title {
+    color: $brandColor;
+    text-transform: uppercase;
+    @include font-size(14px);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+  }
+}
+
+/* App Images */
+.app-images {
+  margin-left: 55px;
+  margin-top: 18px;
+
+  @media(max-width: 500px){
+
+    margin-left: 0;
+    text-align: center;
+  }
+
+  a {
+    margin-right: 20px;
+
+    @media(max-width: 500px) {
+      margin: 0;
+    }
+    
+    img {
+
+      @media(max-width: 500px) {
+
+        margin: 0;
+        margin-top: 15px;
+      }
+
+    }
+
+    
+  }
+}

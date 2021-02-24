@@ -1,0 +1,95 @@
+/*======================
+10. Services Style CSS
+========================*/
+
+.service-area-top {
+  padding: 110px 0 130px;
+  position: relative;
+  z-index: 1;
+
+  @media #{$md-device} {
+    padding: 90px 0 135px;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0 135px;
+  }
+
+  &:before {
+    @include overlay($brandColor, 0.9);
+    z-index: -1;
+  }
+}
+
+.service-content-area {
+  margin-top: -170px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.service-item {
+  margin-top: 30px;
+  transition: 0.4s;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  .service-txt {
+    background-color: $offWhite;
+    padding: 25px 0;
+
+    h5 {
+      font-weight: 600;
+      margin-bottom: 0;
+
+      @media #{$sm-device} {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .service-content {
+    background-color: rgba($brandColor, 0.95);
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    position: absolute;
+    transition: 0.4s;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    @media #{$sm-device} {
+      padding: 15px;
+    }
+
+    h5 {
+      color: $white;
+      font-weight: 500;
+      margin-bottom: 18px;
+
+      a{
+        color: $white;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.26);
+
+    .service-content{
+      left: 0;
+    }
+  }
+}
+
+.non-opacity{
+  &:after,&:before{
+    display: none;
+  }
+}

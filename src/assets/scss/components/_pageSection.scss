@@ -1,0 +1,68 @@
+.pagecontent {
+    padding: 80px 0;
+
+    @media(max-width: 500px) {
+
+        padding: 60px 0;
+    }
+
+    .shap-box {
+        width: 100px;
+        height: 1px;
+        background-color: #636363;
+
+        @media(max-width: 500px) {
+
+            display: none;
+        }
+    }
+
+    .box-content {
+
+        h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            color: $headingColor;
+            font-size: 48px;
+        }
+
+        .text {
+            color: $paragraph;
+            font-size: 18px;
+            font-weight: 100;
+
+            .content {
+
+                .second, .third {
+
+                    padding-left: 25px;
+
+                    li {
+                        color: $paragraph;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .content-box {
+
+                    h3 {
+
+                        margin-top: 25px;
+                    }
+                    p {
+                        margin: 10px 0;
+                        color: $paragraph;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

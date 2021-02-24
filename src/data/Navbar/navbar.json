@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "link": "",
+    "img" : false
+    
+  },
+  {
+    "id":7,
+    "title":"Services",
+    "link":"/services",
+    "img":false
+  },
+  {
+    "id": 2,
+    "title": "Enaya for Doctors",
+    "link": "/app-enaya",
+    "img" : false
+  },
+  {
+    "id": 3,
+    "title": "Contact",
+    "link": "/contact",
+    "img" : false
+  },
+  {
+    "id": 7,
+    "title": "Profile",
+    "link": "/Profile",
+    "img" : false
+  },
+  {
+    "id": 6,
+    "title": "Contact",
+    "link": "/contact",
+    "img" : true
+  } 
+]

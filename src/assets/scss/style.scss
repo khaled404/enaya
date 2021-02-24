@@ -1,0 +1,53 @@
+@import 'tableofcontent';
+
+// Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/rfs';
+@import 'base/typography';
+
+// Utilities
+@import 'utilities/color';
+@import 'utilities/common';
+@import 'utilities/navbar';
+@import 'utilities/spacing';
+
+// Layout Index
+@import "layout/header";
+@import "layout/footer";
+
+// components
+@import "components/off-canvas";
+@import "components/form";
+@import "components/icon-box";
+@import "components/accordion";
+@import "components/skill-bar";
+@import "components/timeline";
+@import "components/socialMedia";
+@import "components/pageSection";
+@import "components/doctorList";
+@import "components/profileMenu";
+@import "components/UserAppointments";
+@import "components/doctorDetails";
+
+// pages
+@import "pages/faq";
+@import "pages/service-details";
+@import "pages/member-details";
+@import "pages/blog";
+@import "pages/contact";
+
+// Sections
+@import "sections/slider";
+@import "sections/about";
+@import "sections/service";
+@import "sections/testimonial";
+@import "sections/team";
+@import "sections/blog";
+@import "sections/brand-logo";
+@import "sections/funfact";
+@import "sections/page-header";
+@import "sections/history";
+@import "sections/pricing";
+@import "sections/specialties";
+@import "sections/loginSection";

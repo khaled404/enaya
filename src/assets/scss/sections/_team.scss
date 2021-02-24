@@ -1,0 +1,184 @@
+/*=======================
+13. Team Style CSS
+=========================*/
+
+.team-mem-item {
+  transition: 0.4s;
+
+  .member-info {
+    text-align: center;
+    background-color: $white;
+    padding: 15px 10px;
+
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1;
+
+      a {
+        color: $headingColor;
+
+        &:hover {
+          color: $hvrColor;
+        }
+      }
+    }
+
+    .designation {
+      font-weight: 400;
+      color: $brandColor;
+    }
+  }
+
+  .member-pic {
+    img {
+      width: 100%;
+    }
+  }
+
+  &--2 {
+    position: relative;
+    margin-top: 40px;
+
+    .member-info {
+      background-color: transparent;
+      padding: 0;
+      position: absolute;
+      top: -15px;
+      left: -110px;
+      width: 100%;
+      @include hide;
+      transform: translateY(-20px);
+
+      @media #{$sm-device} {
+        left: -80px;
+      }
+
+      &:after{
+        background-image: url('../../img/team/team-arrow.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        content: '';
+        position: absolute;
+        transform: translateY(-10px);
+        transition: 0.4s;
+        transition-duration: 0.8s;
+        top: 100%;
+        right: -15px;
+        height: 40px;
+        width: 100%;
+      }
+    }
+
+    .member-pic {
+      text-align: center;
+
+      img {
+        max-height: 400px;
+        width: auto;
+        margin: auto;
+      }
+    }
+
+    &:hover{
+      .member-info{
+        @include show;
+        transform: none;
+
+        &:after{
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
+.team-area-wrapper {
+  .section-title {
+    @media screen and (min-width: 1500px) {
+      padding-right: 100px;
+    }
+  }
+
+  .team-content-wrap {
+    @media screen and (min-width: 1500px) {
+      padding-left: 45px;
+    }
+
+    .slick-dots {
+      display: flex!important;
+      justify-content: center;
+    }
+
+    .slick-list {
+      margin: 0 -15px;
+      @media #{$sm-device} {
+        margin: 0 -10px;
+      }
+
+      .slick-slide {
+        padding: 0 15px;
+
+        @media #{$sm-device} {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.team-area{
+  &-left{
+    background-color: $brandColor;
+    padding: 110px 100px 105px;
+    height: 100%;
+
+    @media #{$xlmax-device} {
+      padding: 90px 25px;
+    }
+
+    @media #{$md-device} {
+      padding: 90px;
+    }
+
+    @media #{$sm-device} {
+      padding: 60px 30px  50px;
+    }
+
+    @media #{$xs-device} {
+      padding: 60px 15px 50px;
+    }
+  }
+
+  &-right{
+    position: relative;
+    padding: 110px 100px 0;
+
+    @media #{$md-device} {
+      padding: 80px 100px 0;
+    }
+
+    @media #{$sm-device} {
+      padding: 50px 30px 0;
+    }
+
+    &--2{
+      &:before{
+        @include overlay($white, 0.85);
+      }
+    }
+  }
+}
+
+
+// Team Page
+.team-page-area-wrapper{
+  .team-mem-item{
+    margin-top: 30px;
+    transition: 0.4s;
+
+    &:hover{
+      transform: translateY(-10px);
+    }
+  }
+}
