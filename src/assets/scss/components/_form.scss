@@ -1,7 +1,6 @@
 /*=====================
 06. Form Style CSS
 ====================== */
-
 .form-input-item {
   margin-top: 20px;
   input {
@@ -56,6 +55,11 @@
     padding-left: 45px;
     border: none;
     border-radius: 30px;
+    [dir="rtl"] & {
+      text-align: right;
+      padding-left: unset;
+      padding-right: 45px;
+    }
 
     &::placeholder {
       font-size: 12px;
@@ -75,6 +79,10 @@
     font-size: 12px;
     text-transform: uppercase;
     font-family: $secondFont;
+    [dir="rtl"] & {
+      right: unset;
+      left: 5px;
+    }
   }
 
   img {
@@ -83,6 +91,10 @@
     left: 15px;
     transform: translateY(-50%);
     width: 15px;
+    [dir="rtl"] & {
+      right: 15px;
+      left: unset;
+    }
   }
 }
 span.search-text {
@@ -90,6 +102,9 @@ span.search-text {
   margin-top: 15px;
   font-size: 16px;
   color: #050607;
+  [dir="rtl"] & {
+    text-align: left;
+  }
 
   @media (max-width: 500px) {
     text-align: center;
@@ -213,7 +228,9 @@ input[type="submit"] {
 
 .form-header {
   padding: 20px 0;
-
+  [dir="rtl"] & {
+    text-align: right;
+  }
   h3 {
     color: $maincolor;
     font-size: 48px;
@@ -256,6 +273,10 @@ select {
     top: 50%;
     transform: translateY(-50%);
     right: 15px;
+    [dir="rtl"] & {
+      left: 15px;
+      right: unset;
+    }
     color: $secondColor;
   }
 }

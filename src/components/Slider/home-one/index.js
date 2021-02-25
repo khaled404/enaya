@@ -23,6 +23,7 @@ const Slider = ({ images }) => {
     autoplaySpeed: 2000,
     // nextArrow: <NextArrow/>,
     // prevArrow: <PrevArrow/>,
+    rtl: localStorage.getItem("LANG") === "ar",
     responsive: [
       {
         breakpoint: 500,

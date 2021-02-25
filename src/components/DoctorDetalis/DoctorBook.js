@@ -29,10 +29,10 @@ const DoctorBook = ({ name, img, price, specialist }) => {
 
   return (
     <div className="booking-section">
-      <h5 className="title">Booking </h5>
+      <h5 className="title">{t("Booking")} </h5>
       <div className="row equal">
         <div className="col-md-3">
-          <h6 className="tab-title">Available Dates</h6>
+          <h6 className="tab-title">{t("Available Dates")}</h6>
           <Nav tabs>
             <NavItem>
               <NavLink

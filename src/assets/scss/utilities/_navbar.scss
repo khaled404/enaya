@@ -1,7 +1,13 @@
 /*===========================
 4.1 - Main Navigation CSS
 =============================*/
-
+.borderLeftRight {
+  border-left: 1px solid #eee;
+  [dir="rtl"] & {
+    border-left: unset;
+    border-right: 1px solid #eee;
+  }
+}
 .main-menu {
   align-content: center;
   justify-content: flex-end;
@@ -9,7 +15,10 @@
   & > li {
     margin-right: 30px;
     position: relative;
-
+    [dir="rtl"] & {
+      margin-right: 0;
+      margin-left: 30px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -24,19 +33,18 @@
       padding: 40px 0;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
         height: 3px;
         width: 0;
-        background-color:$secondColor;
-        transition: all .25s ease-in-out;
+        background-color: $secondColor;
+        transition: all 0.25s ease-in-out;
       }
 
       &:hover {
-
         &:before {
           width: 100%;
         }
@@ -46,14 +54,12 @@
         font-size: 14px;
       }
 
-      .flag{
+      .flag {
         width: 25px;
         position: relative;
         top: -1px;
-        
       }
     }
-    
   }
 }
 
@@ -64,9 +70,9 @@
   padding: 20px 30px;
   color: $brandColor;
 
-  .mobile-nav{
+  .mobile-nav {
     li {
-      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       position: relative;
       list-style: none;
 
@@ -94,14 +100,13 @@
       }
 
       ul {
-        border-top: 1px solid rgba(255, 255, 255, .2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
         margin: 0;
         padding-left: 10px;
 
         li {
-
-          &.mega-menu-item{
-            & > a{
+          &.mega-menu-item {
+            & > a {
               font-weight: 600;
             }
           }

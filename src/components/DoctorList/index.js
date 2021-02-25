@@ -60,10 +60,7 @@ const DoctorList = ({
                 )}
               </div>
             </div>
-            <div
-              className="col-md-4 col-12"
-              style={{ borderLeft: "1px solid #EEE" }}
-            >
+            <div className="col-md-4 col-12 borderLeftRight">
               <div className="doc-feat">
                 <ul>
                   {location && (

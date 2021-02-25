@@ -25,7 +25,10 @@ const LoginForm = () => {
 
   return (
     <Fragment>
-      <FormHeader title="Sign In" text="Sign in now to Access Your Account" />
+      <FormHeader
+        title={t("Sign In")}
+        text={t("Sign in now to Access Your Account")}
+      />
       <form id="login-form" className="auth-form" onSubmit={onSubmitHandler}>
         <div className="single-input-item">
           <div className="row">
@@ -42,7 +45,7 @@ const LoginForm = () => {
             <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder={t("password")}
               required
               onChange={(e) => {
                 const text = e.target.value;
@@ -72,7 +75,7 @@ const LoginForm = () => {
       <div className="login-feats ">
         <div className="forget-link" style={{ marginBottom: 15 }}>
           <Link to={`${process.env.PUBLIC_URL + "/forget-pass"}`}>
-            Forgot password?
+            {t("Forgot password?")}
           </Link>
         </div>
       </div>

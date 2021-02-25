@@ -1,82 +1,86 @@
 .user-appointments {
-    padding: 80px 0;
+  padding: 80px 0;
+  [dir="rtl"] & {
+    text-align: right;
+  }
+  .media {
+    align-items: center;
 
-    .media{
-        align-items: center;
-
-        img {
-            width: 100px;
-            height: 100px;
-        }
-
-        p {
-            margin-bottom: 5px;
-            color: $maincolor;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        h5 {
-            color: $secondColor;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        a {
-            font-size: 14px;
-            color: #959595;
-        }
+    img {
+      width: 100px;
+      height: 100px;
     }
 
-    .doctor-list {
-
-        .type {
-            font-size: 13px;
-            color: $maincolor;
-        }
-
-        .title-box {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-
-            .price {
-                font-size: 14px;
-                color: $secondColor;
-                font-weight: 600;
-            }
-        }
-
-        .wating-hours {
-
-            .time {
-                padding-left: 10px;
-            }
-        }
-
-        .location {
-            color: $maincolor;
-            margin-top: 5px;
-        }
-
-        .doc-feat {
-
-            .book-btn {
-
-                a.disabled {
-                    color: #FFF;
-                    pointer-events: none;
-                    background-color: #e89f9e;
-                    border-color: #e89f9e;
-                }
-
-                a.booked {
-                    pointer-events: none;
-                    color: $maincolor;
-                    background-color: #b1e9ea;
-                    border-color: #b1e9ea;
-                }
-            }
-        }
+    p {
+      margin-bottom: 5px;
+      color: $maincolor;
+      font-size: 13px;
+      font-weight: 600;
     }
+
+    h5 {
+      color: $secondColor;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    a {
+      font-size: 14px;
+      color: #959595;
+    }
+  }
+
+  .doctor-list {
+    .type {
+      font-size: 13px;
+      color: $maincolor;
+    }
+
+    .title-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      .price {
+        font-size: 14px;
+        color: $secondColor;
+        font-weight: 600;
+      }
+    }
+
+    .wating-hours {
+      .time {
+        padding-left: 10px;
+      }
+    }
+
+    .location {
+      color: $maincolor;
+      margin-top: 5px;
+    }
+
+    .doc-feat {
+      .book-btn {
+        a.disabled {
+          color: #fff;
+          pointer-events: none;
+          background-color: #e89f9e;
+          border-color: #e89f9e;
+        }
+
+        a.booked {
+          pointer-events: none;
+          color: $maincolor;
+          background-color: #b1e9ea;
+          border-color: #b1e9ea;
+        }
+      }
+    }
+  }
+}
+.info-title,
+.info-title {
+  [dir="rtl"] & {
+    text-align: right;
+  }
 }

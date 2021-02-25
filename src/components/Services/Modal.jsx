@@ -48,7 +48,7 @@ const Modal = ({ active, onClick, reqType, product_id }) => {
               );
             }}
           >
-            ER request
+            {t("ER request")}
           </button>
         ) : (
           <form

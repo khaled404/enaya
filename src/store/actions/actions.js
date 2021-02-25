@@ -8,5 +8,6 @@ const ActionTypes = {
   SAVE_PRODUCT_DETALIS: 7,
   SAVE_HOSPITAL_DETALIS: 8,
   SAVE_REVIEWS: 9,
+  SAVE_AVAILABILITIES: 10,
 };
 export default ActionTypes;

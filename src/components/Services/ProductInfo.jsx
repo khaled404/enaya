@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import RateValue from "../../data/Rate/rate.json";
 
 const ProductInfo = ({
@@ -13,7 +14,7 @@ const ProductInfo = ({
   patients,
 }) => {
   // const RateImg = RateValue.find(item => (item.val === rate))
-
+  const { t } = useTranslation();
   return (
     <div className="doctor-box">
       <div className="media">
@@ -29,7 +30,9 @@ const ProductInfo = ({
             <p>
               {" "}
               {specialist?.map((spec) => spec.name)} .{" "}
-              <span className="price">Fees: {price} EGP</span>
+              <span className="price">
+                {t("Fees")}: {price} {t("EGP")}
+              </span>
             </p>
           </div>
           <div className="work-hours">
@@ -45,7 +48,7 @@ const ProductInfo = ({
                   false
                 )
               )}
-              {patients} Reviews
+              {patients} {t("Reviews")}
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import { GetProductDetailsHandler } from "../store/actions/services";
 import { useParams } from "react-router";
 import ProductInfo from "../components/Services/ProductInfo";
 import Modal from "../components/Services/Modal";
+import { useTranslation } from "react-i18next";
 
 const ProductDetails = () => {
   const { productDetails } = useSelector((state) => state.services);
@@ -21,6 +22,7 @@ const ProductDetails = () => {
   useEffect(() => {
     dispatch(GetProductDetailsHandler(id));
   }, []);
+  const { t } = useTranslation();
   const toggleModeHandler = () => {
     setToggleModal((e) => !e);
     if (!toggleModal) {
@@ -56,8 +58,7 @@ const ProductDetails = () => {
               />
               <div style={{ marginTop: 40 }}>
                 <button className="costum-book" onClick={toggleModeHandler}>
-                  {productDetails.req_type === "er_req" ? "ER request" : "Get"}
-                  Book
+                  {t("Book")}
                 </button>
               </div>
               <DoctorRate id={productDetails.id} type="entity" />

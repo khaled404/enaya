@@ -24,19 +24,19 @@ class BookForm extends Component {
             type="text"
             className="test"
             name="name"
-            placeholder="Patient Name"
+            placeholder={t("Patient Name")}
           />
           <input
             type="phone"
             className="test"
             name="phone"
-            placeholder="Phone Number"
+            placeholder={t("Phone Number")}
           />
           <input
             type="email"
             className="test"
             name="mail"
-            placeholder="Email"
+            placeholder={t("Email")}
           />
           {/* <label htmlFor="other" className="checklabel">Book for other</label> */}
           {/* <input type="checkbox" id="other" onChange={this.handelChecked} /> */}
@@ -52,7 +52,7 @@ class BookForm extends Component {
                     name="payment"
                     value=""
                   />
-                  <label htmlFor="cash">Cash</label>
+                  <label htmlFor="cash">{t("Cash")}</label>
                 </div>
                 <div className="col-4 cus">
                   <input

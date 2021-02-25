@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import RateValue from "../../data/Rate/rate.json";
 
 const DoctorInfo = ({
@@ -13,26 +14,30 @@ const DoctorInfo = ({
   patients,
 }) => {
   // const RateImg = RateValue.find(item => (item.val === rate))
-
+  const { t } = useTranslation();
   return (
     <div className="doctor-box">
       <div className="media">
         <img src={img} className="align-self-start mr-3" alt="doc-img" />
         <div className="media-body">
-          <h5 className="doc-name">Dr. {name}</h5>
+          <h5 className="doc-name">
+            {t("Dr")}. {name}
+          </h5>
           <div className="doc-spec">
             {price && (
               <p>
                 {" "}
                 {specialist?.map((spec) => spec.name)} .{" "}
-                <span className="price">Fees: {price} EGP</span>
+                <span className="price">
+                  {t("Fees")}: {price} {t("EGP")}
+                </span>
               </p>
             )}
           </div>
           <div className="work-hours">
             {dayWork && (
               <p className="text">
-                <span className="title">Working hours:</span>{" "}
+                <span className="title">{t("Working hours")}:</span>{" "}
                 {dayWork + " " + hourWork}
               </p>
             )}
@@ -49,7 +54,7 @@ const DoctorInfo = ({
                     false
                   )
                 )}
-                {patients} Reviews
+                {patients} {t("Reviews")}
               </div>
             )}
           </div>
@@ -57,7 +62,7 @@ const DoctorInfo = ({
       </div>
       {dec && (
         <div className="description">
-          <h5 className="title">Description</h5>
+          <h5 className="title">{t("Description")}</h5>
           <p className="text"> {dec} </p>
         </div>
       )}

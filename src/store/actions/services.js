@@ -174,3 +174,20 @@ export const GetReviewsHandler = (type, id) => {
     }
   };
 };
+/**
+ * @param {string} id  user id
+ */
+export const GetAvailabilitiesHandler = (id) => {
+  return async (dispatch) => {
+    try {
+      const { data } = await axiosAPI.get(`appointments/${id}`);
+      console.log("🚀 ~ file: services.js ~ line 74 ~ return ~ data", data);
+      dispatch({ type: ActionTypes.SAVE_AVAILABILITIES, payload: data.data });
+    } catch (error) {
+      console.log(
+        "🚀 ~ file: services.js ~ line 52 ~ return ~ error",
+        error.response
+      );
+    }
+  };
+};

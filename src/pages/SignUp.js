@@ -9,10 +9,12 @@ import MobileMenu from "../components/MobileMenu";
 import { useDispatch } from "react-redux";
 import { RegisterHandler, VerifyCodeHandler } from "../store/actions/auth";
 import VerificationInput from "react-verification-input";
+import { useTranslation } from "react-i18next";
 
 const SignUp = () => {
   const dispatch = useDispatch();
   const { push } = useHistory();
+  const { t } = useTranslation();
   const [state, setstate] = useState({
     name: "",
     email: "",
@@ -69,9 +71,9 @@ const SignUp = () => {
             <div className="col-lg-6 col-md-12 cus-rs">
               <img src={SignUpImg} alt="sign-up-img" />
               <div className="login-link text-center">
-                Already User?{" "}
+                {t("Already User?")}{" "}
                 <Link to={`${process.env.PUBLIC_URL + "/login"}`}>
-                  Sign in now!
+                  {t("Sign in now!")}
                 </Link>
               </div>
             </div>
@@ -84,7 +86,7 @@ const SignUp = () => {
                   position: !state.showCode ? "absolute" : "relative",
                 }}
               >
-                <FormHeader title="Enter Validation Code." />
+                <FormHeader title={t("Enter Validation Code.")} />
                 <VerificationInput
                   length={4}
                   placeholder="0"
@@ -111,15 +113,15 @@ const SignUp = () => {
                 }}
               >
                 <FormHeader
-                  title="Sign up for free."
-                  text="Join Thousands of users That Use Enaya Every Day !"
+                  title={t("Sign up for free") + "."}
+                  text={t("Join Thousands of users That Use Enaya Every Day !")}
                 />
                 <form id="sign-up-form" onSubmit={onSubmitHandler}>
                   <FormInput
                     tag={"input"}
                     type={"text"}
                     name={"name"}
-                    placeholder={"Your Name"}
+                    placeholder={t("Your Name")}
                     onChange={(text) => {
                       setstate((old) => ({ ...old, name: text }));
                     }}
@@ -128,7 +130,7 @@ const SignUp = () => {
                     tag={"input"}
                     type={"text"}
                     name={"phone"}
-                    placeholder={"Phone Number"}
+                    placeholder={t("Phone Number")}
                     onChange={(text) => {
                       setstate((old) => ({ ...old, phone: text }));
                     }}
@@ -137,7 +139,7 @@ const SignUp = () => {
                     tag={"input"}
                     type={"email"}
                     name={"phone"}
-                    placeholder={"Email"}
+                    placeholder={t("Email")}
                     onChange={(text) => {
                       setstate((old) => ({ ...old, email: text }));
                     }}
@@ -146,7 +148,7 @@ const SignUp = () => {
                     <FormInput
                       tag={"select"}
                       val={["m", "f"]}
-                      label={["Male", "Female"]}
+                      label={[t("Male"), t("Female")]}
                       onChange={(text) => {
                         setstate((old) => ({ ...old, gender: text }));
                       }}
@@ -157,7 +159,7 @@ const SignUp = () => {
                     tag={"input"}
                     type={"password"}
                     name={"phone"}
-                    placeholder={"Enter Your Password"}
+                    placeholder={t("Enter Your Password")}
                     onChange={(text) => {
                       setstate((old) => ({ ...old, password: text }));
                     }}
@@ -166,7 +168,7 @@ const SignUp = () => {
                     tag={"input"}
                     type={"password"}
                     name={"phone"}
-                    placeholder={"Retype Your Password"}
+                    placeholder={t("Retype Your Password")}
                     onChange={(text) => {
                       setstate((old) => ({
                         ...old,
@@ -177,19 +179,19 @@ const SignUp = () => {
                   <div className="remember d-flex align-items-baseline">
                     <FormInput tag={"input"} type={"radio"} name={"rad"} />
                     <span>
-                      I have read & Accept Athena{" "}
+                      {t("I have read & Accept Athena")}{" "}
                       <Link to="/" className="hover-color">
-                        Privacy Policy
+                        {t("Privacy Policy")}
                       </Link>{" "}
-                      and{" "}
+                      {t("and")}{" "}
                       <Link to="/" className="hover-color">
-                        Terms of Use
+                        {t("Terms of Use")}
                       </Link>
                     </span>
                   </div>
                   <FormInput
                     tag={"input"}
-                    type={"submit"}
+                    type={t("submit")}
                     name={"rad"}
                     val={"Sign Up"}
                   />

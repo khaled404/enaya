@@ -2,8 +2,8 @@
 --. Footer Style CSS
 ===========================*/
 .footer-area {
-  border-top: 1px solid #EBEBEB;
-  background-color: $white; 
+  border-top: 1px solid #ebebeb;
+  background-color: $white;
   padding-top: 50px;
   padding-bottom: 20px;
 
@@ -14,6 +14,9 @@
 
 .widget-item {
   margin-top: 38px;
+  [dir="rtl"] & {
+    text-align: right;
+  }
 
   .widget-title {
     color: $brandColor;
@@ -22,6 +25,9 @@
     line-height: 1;
     margin-top: -1px;
     margin-bottom: 22px;
+    [dir="rtl"] & {
+      text-align: right;
+    }
 
     @media #{$sm-device} {
       margin-bottom: 15px;
@@ -38,13 +44,16 @@
 .widget-list {
   li {
     line-height: 2;
+    [dir="rtl"] & {
+      text-align: right;
+    }
 
     a {
       color: $paragraph;
       font-weight: 500;
       transition: 0.2s;
       font-size: 14px;
-      color: #7D7D7D;
+      color: #7d7d7d;
 
       &:hover {
         color: $brandColor;
@@ -54,7 +63,6 @@
   }
 }
 .footer-numbers {
-
   font-size: 13px;
   text-transform: uppercase;
   color: $brandColor;
@@ -65,7 +73,11 @@
     font-size: 22px;
     margin-right: 5px;
   }
-  
+  li {
+    [dir="rtl"] & {
+      text-align: center;
+    }
+  }
 }
 // About Widget
 .about-widget {
@@ -73,15 +85,14 @@
     max-width: 120px;
     margin-bottom: 20px;
 
-    @media(max-width : 768px) {
+    @media (max-width: 768px) {
       margin: 0;
-
     }
   }
 }
 
 .footer-bottom {
-  border-top: 1px solid #EBEBEB;
+  border-top: 1px solid #ebebeb;
 
   .privacy-list {
     display: flex;
@@ -101,7 +112,7 @@
 .copyright-txt {
   margin-top: 25px;
   font-weight: 500;
-  color: #9FA4AF;
+  color: #9fa4af;
   font-weight: 100;
 
   .hover-color {

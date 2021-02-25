@@ -55,12 +55,11 @@
   color: $maincolor;
   width: 55%;
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     width: 100%;
   }
 
-  @media(max-width: 768px) {
-
+  @media (max-width: 768px) {
     width: 100%;
   }
 
@@ -69,9 +68,11 @@
     font-weight: 600;
     font-size: 72px;
     font-family: $secondFont;
+    [dir="rtl"] & {
+      text-align: right;
+    }
 
-    @media (max-width: 500px){
-
+    @media (max-width: 500px) {
       font-size: 45px;
       // text-align: center;
     }
@@ -80,13 +81,15 @@
   p {
     font-size: 20px;
     color: $paragraph;
+    [dir="rtl"] & {
+      text-align: right;
+    }
 
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
       font-size: 15px;
       text-align: center;
       line-height: 1.9;
     }
-
   }
 }
 
@@ -154,7 +157,8 @@
     transform: translateY(-10px);
 
     .image {
-      &:before, i {
+      &:before,
+      i {
         opacity: 1;
       }
     }

@@ -12,6 +12,7 @@ import { useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { GetHospitalDetailsHandler } from "../store/actions/services";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HospitalDetails = () => {
   const { id } = useParams();
@@ -30,7 +31,7 @@ const HospitalDetails = () => {
     localStorage.setItem("Docimg", hospitalDetails.image);
     localStorage.setItem("DocPrice", hospitalDetails.price);
   }
-
+  const { t } = useTranslation();
   return (
     <>
       <Header />
@@ -51,7 +52,7 @@ const HospitalDetails = () => {
                 patients={hospitalDetails.patients}
               />
               <div className="HospitalsSections">
-                <h3>Browse Hospitals sections</h3>
+                <h3>{t("Browse Hospitals sections")}</h3>
                 {hospitalDetails?.departments?.map((item) => (
                   <div className="hospitals-box">
                     <div className="image-box">
@@ -70,7 +71,7 @@ const HospitalDetails = () => {
                 onClick={handelClick}
                 className="costum-book"
               >
-                Book
+                {t("Book")}
               </Link>
               <DoctorRate id={hospitalDetails.id} type="entity" />
             </div>

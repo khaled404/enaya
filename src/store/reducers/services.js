@@ -6,6 +6,7 @@ const initialState = {
   productDetails: {},
   hospitalDetails: {},
   reviews: [],
+  availabilities: [],
 };
 
 export default (state = initialState, { type, payload }) => {
@@ -20,7 +21,8 @@ export default (state = initialState, { type, payload }) => {
       return { ...state, hospitalDetails: payload };
     case ActionTypes.SAVE_REVIEWS:
       return { ...state, reviews: payload };
-
+    case ActionTypes.SAVE_AVAILABILITIES:
+      return { ...state, availabilities: payload };
     default:
       return state;
   }

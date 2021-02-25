@@ -6,8 +6,10 @@ import FormHeader from "../templates/Contact/FormHeader";
 import { Link } from "react-router-dom";
 import MobileMenu from "../components/MobileMenu";
 import LoginForm from "../components/Auth/LoginForm";
+import { useTranslation } from "react-i18next";
 
 const Login = () => {
+  const { t } = useTranslation();
   return (
     <Fragment>
       <Header />
@@ -48,9 +50,9 @@ const Login = () => {
                     </form> */}
           <LoginForm />
           <div className="sign-up-link">
-            Don't have an account?{" "}
+            {t("Don't have an account?")}{" "}
             <Link to={`${process.env.PUBLIC_URL + "/sign-up"}`}>
-              Sign up now!
+              {t("Sign up now!")}
             </Link>
           </div>
         </div>
